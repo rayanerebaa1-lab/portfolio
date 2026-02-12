@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./portfolio.css" rel="stylesheet">
+    <style>
+        /* Ajustements spécifiques pour la page veille */
+        .veille-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(94, 234, 212, 0.1);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #5eead4;
+            margin: 0 auto 1.5rem;
+        }
+        .veille-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+        .veille-tag {
+            font-size: 0.75rem;
+            padding: 0.375rem 0.875rem;
+            background: rgba(94, 234, 212, 0.08);
+            color: #5eead4;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(94, 234, 212, 0.2);
+            transition: all 0.3s;
+        }
+        .veille-tag:hover {
+            background: rgba(94, 234, 212, 0.15);
+            border-color: #5eead4;
+        }
+        .badge-link {
+            display: block;
+            padding: 0.75rem;
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 0.75rem;
+            color: #f1f5f9;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+        .badge-link:hover {
+            border-color: #5eead4;
+            background: #1a2634;
+            transform: translateY(-2px);
+        }
+        .btn-veille {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #5eead4;
+            color: #0b1a1f;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn-veille:hover {
+            background: #4fd1c5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(94, 234, 212, 0.3);
+        }
+        .btn-outline-veille {
+            background: transparent;
+            border: 1px solid #1e293b;
+            color: #f1f5f9;
+        }
+        .btn-outline-veille:hover {
+            border-color: #5eead4;
+            background: rgba(94, 234, 212, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (identique à portfolio.html) -->
+    <nav>
+        <div class="container">
+            <a href="portfolio.html" class="logo">&lt;Portfolio /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="portfolio.html#accueil">Accueil</a></li>
+                <li><a href="portfolio.html#about">À propos</a></li>
+                <li><a href="portfolio.html#skills">Compétences</a></li>
+                <li><a href="portfolio.html#projects">Projets</a></li>
+                <li><a href="portfolio.html#contact">Contact</a></li>
+                <li><a href="veille.html" class="active">Veille Tech</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Section Veille (contenu principal) -->
+    <section style="padding: 6rem 0 4rem;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">// Veille technologique</p>
+                <h2 class="section-title">Intelligence Artificielle</h2>
+                <p class="section-subtitle" style="color: #94a3b8; max-width: 700px; margin: 0 auto;">
+                    Suivi des dernières avancées en IA, Machine Learning et Deep Learning
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 3rem auto;">
+                <!-- Carte principale -->
+                <div style="background: #0f172a; border: 1px solid #1e293b; border-radius: 1.5rem; padding: 2.5rem 2rem; text-align: center;">
+                    <div class="veille-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #f1f5f9;">Actualités IA & ML</h3>
+                    <p style="color: #94a3b8; max-width: 650px; margin: 0 auto 2rem;">
+                        Je suis passionné par l'intelligence artificielle et je reste constamment informé des dernières innovations en IA générative, modèles de langage, Computer Vision et Deep Learning.
+                    </p>
+                    <div class="veille-tags">
+                        <span class="veille-tag">GPT-4</span>
+                        <span class="veille-tag">Claude</span>
+                        <span class="veille-tag">TensorFlow</span>
+                        <span class="veille-tag">PyTorch</span>
+                        <span class="veille-tag">Deep Learning</span>
+                        <span class="veille-tag">Computer Vision</span>
+                        <span class="veille-tag">NLP</span>
+                        <span class="veille-tag">Transformers</span>
+                    </div>
+                    
+                    <h4 style="font-size: 1.2rem; margin: 2rem 0 1rem; color: #e2e8f0;">Plateformes principales</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2.5rem;">
+                        <a href="https://www.artificialintelligence-news.com/" target="_blank" class="btn-veille">AI News</a>
+                        <a href="https://openai.com/research" target="_blank" class="btn-veille btn-outline-veille">OpenAI Research</a>
+                        <a href="https://deepmind.google/" target="_blank" class="btn-veille btn-outline-veille">Google DeepMind</a>
+                    </div>
+
+                    <hr style="border-color: #1e293b; margin: 2rem 0;">
+
+                    <h4 style="font-size: 1.2rem; margin-bottom: 1.5rem; color: #e2e8f0;">Mes sources quotidiennes</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;">
+                        <a href="https://machinelearningmastery.com/" target="_blank" class="badge-link">📘 Machine Learning Mastery</a>
+                        <a href="https://paperswithcode.com/" target="_blank" class="badge-link">📄 Papers with Code</a>
+                        <a href="https://www.reddit.com/r/MachineLearning/" target="_blank" class="badge-link">💬 r/MachineLearning</a>
+                        <a href="https://arxiv.org/list/cs.AI/recent" target="_blank" class="badge-link">📚 arXiv AI</a>
+                        <a href="https://huggingface.co/" target="_blank" class="badge-link">🤗 Hugging Face</a>
+                        <a href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank" class="badge-link">📰 MIT Tech Review</a>
+                    </div>
+
+                    <hr style="border-color: #1e293b; margin: 2rem 0;">
+
+                    <h4 style="font-size: 1.2rem; margin-bottom: 1.5rem; color: #e2e8f0;">Podcasts & YouTube</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem;">
+                        <a href="https://www.youtube.com/@3blue1brown" target="_blank" class="badge-link">🎥 3Blue1Brown</a>
+                        <a href="https://www.youtube.com/@TwoMinutePapers" target="_blank" class="badge-link">⏱ Two Minute Papers</a>
+                        <a href="https://www.youtube.com/@lexfridman" target="_blank" class="badge-link">🎙 Lex Fridman Podcast</a>
+                        <a href="https://www.youtube.com/@sentdex" target="_blank" class="badge-link">🐍 Sentdex</a>
+                    </div>
+
+                    <div style="margin-top: 3rem;">
+                        <a href="portfolio.html" class="btn-veille btn-outline-veille" style="display: inline-block;">
+                            ← Retour au portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identique au portfolio) -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Rayane Rebaa - BTS SIO SLAM</p>
+            <div class="social-links">
+                <a href="#">GH</a>
+                <a href="#">LI</a>
+                <a href="#">HW</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome (pour les icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        // Mobile menu toggle (identique à portfolio.html)
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Smooth scroll sur les ancres
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.textContent = '☰';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
